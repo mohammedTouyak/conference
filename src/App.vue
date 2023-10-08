@@ -1,62 +1,53 @@
 <template>
-  <div id="app">
-    <Header></Header>
-    <Navbar></Navbar>
-    <router-view/>
-    <Footer></Footer>
+  <div id="app" class="homepage">
+    <div class="wrapper">
+      <Navbar2></Navbar2>
+      <main>
+        <div class="text-template">
+          <Header></Header>
+          <router-view/>
+        </div>
+
+      </main>
+    </div>
+<FooterV2></FooterV2>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import Header from './components/Header';
+import Navbar2 from "@/components/Navbar2.vue";
+import FooterV2 from "@/components/Footer-v2.vue";
 
   export default {
     name: 'App',
     components: {
-      Navbar,
-      Footer,
+      FooterV2,
+      Navbar2,
+      // Navbar,
       Header
+    },
+    mounted() {
+      const script = document.createElement('script');
+      script.src = require('@/assets/js/slick.min38d6.js');
+      document.head.appendChild(script);
+
+      const script1 = document.createElement('script');
+      script1.src = require('@/assets/js/global.min1138.js');
+      document.head.appendChild(script1);
+      const script2 = document.createElement('script');
+      script2.src = require('@/assets/js/jquery.min38d6.js?ver=5.8.7');
+      document.head.appendChild(script2);
+      const script3 = document.createElement('script');
+      script3.src = require('@/assets/js/jquery.prettySocial.min1138.js?ver=1654028668');
+      document.head.appendChild(script3);
     }
   }
 </script>
 
-<style lang="scss">
+<style >
+@import 'assets/css/style.min1138.css';
 
-  body{
-    background-color: #EEE;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
-  }
-  #app{
-    width: 90%;
-    margin: 0px auto;
-    padding: 0px;
-    background-color: white;
-    box-shadow: 0px 0px 5px 0px gray;
-  }
-
-  @media only screen and (max-width: 770px) {
-    #app {
-      width: 100%;
-    }
-  }
-
-
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #4267b2 ;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
 
 
 

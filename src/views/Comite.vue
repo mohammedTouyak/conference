@@ -1,122 +1,632 @@
 <template>
   <div class="ha-equipe">
-    <h1>Comités</h1>
+    <h1 class="title">Comités</h1>
 
     <div style="padding: 15px">
 
       <div class="row">
 
         <div class="col-12">
-          <strong class="ha-click-event" v-on:click="fadeList('.ha-honneur-list')">Comité d’honneur</strong>
+          <strong class="h3 ha-click-event" v-on:click="fadeList('.ha-honneur-list')">Comité d’honneur</strong>
           <div class="list-type2 ha-honneur-list">
-            <ol>
-              <li ><a href="#">MRABET Radouane<span class="ha-custom-badge text-right">Président de l'Université Sidi Mohammed Ben Abdallah, Fès</span> </a></li>
-              <li ><a href="#">IJJAALI Mustapha<span class="ha-custom-badge text-right">Doyen de la Faculté des Sciences et Techniques, Fès</span> </a></li>
-            </ol>
+
+<!--            -->
+            <ul class="list-group list-group-media">
+                <li class="list-group-item " style="height: 69px;">
+                  <div class="media" >
+                    <div class="me-3">
+                      <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                    </div>
+                    <div class="media-body">
+                      <h6 class="tx-inverse">MRABET Radouane</h6>
+                      <p class="mg-b-0" style="margin-top:-18px;">Président de l'Université Sidi Mohammed Ben Abdallah, Fès</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item " style="height: 69px;">
+                  <div class="media" >
+                    <div class="me-3">
+                      <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                    </div>
+                    <div class="media-body">
+                      <h6 class="tx-inverse">IJJAALI Mustapha</h6>
+                      <p class="mg-b-0" style="margin-top:-18px;">Doyen de la Faculté des Sciences et Techniques, Fès</p>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+<!--            nn-->
           </div>
         </div>
         <hr>
 
         <div class="col-12">
-          <strong class="ha-click-event" v-on:click="fadeList('.ha-chairs-list')">Président</strong>
+          <strong class="h3 ha-click-event" v-on:click="fadeList('.ha-chairs-list')">Président</strong>
           <div class="list-type2 ha-chairs-list">
-            <ol>
-              <li ><a href="#">MRABTI Fatiha<span class="ha-custom-badge text-right"></span> </a></li>
-            </ol>
+
+            <ul class="list-group list-group-media">
+
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">MRABTI Fatiha</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Enseignant Chercheur chez Faculté des Sciences et Techniques de Fés</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
           </div>
         </div>
         <hr>
 
         <div class="col-12">
-          <strong class="ha-click-event" v-on:click="fadeList('.ha-co-chairs-list')">Vices-président</strong>
+          <strong class="h3 ha-click-event" v-on:click="fadeList('.ha-co-chairs-list')">Vices-président</strong>
           <div class="list-type2 ha-co-chairs-list">
-            <ol>
-              <li ><a href="#">ALAMI HASSANI Aicha<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">ABARKAN Mouna<span class="ha-custom-badge text-right"></span> </a></li>
-            </ol>
+
+            <ul class="list-group list-group-media">
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ALAMI HASSANI Aicha</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ABARKAN Mouna</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
         <hr>
 
 
         <div class="col-12">
-          <strong class="ha-click-event" v-on:click="fadeList('.ha-organisation-list')">Comité local</strong>
+          <strong class="h3 ha-click-event" v-on:click="fadeList('.ha-organisation-list')">Comité local</strong>
           <div class="list-type2 ha-organisation-list">
-            <ol>
-              <li ><a href="#">BEGDOURI Ahlam<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">ACHIBAT Taoufiq<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">MRABTI Fatiha<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">ALAMI HASSANI Aicha<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">ABARKANE Mouna<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">AHJYAJE Fatima Zahra<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">LAHBABI Mohammed<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">ABDI Farid<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">BEN ABBOU Rachid<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">GHENNIOUI Hicham<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">ECHATOUI Nor-Said<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">LAMCHARFI Taj-dine<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">ZARED Kamal<span class="ha-custom-badge text-right"></span> </a></li>
-            </ol>
+
+            <ul class="list-group list-group-media">
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">BEGDOURI Ahlam</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Vice Doyen de la Faculté des Sciences et Techniques, Fès</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ACHIBAT Taoufiq</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Doyen de la Faculté des Sciences et Techniques, Fès</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">MRABTI Fatiha</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Enseignant Chercheur chez Faculté des Sciences et Techniques de Fés</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ALAMI HASSANI Aicha</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ABARKANE Mouna</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">AHJYAJE Fatima Zahra</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">LAHBABI Mohammed</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ABDI Farid</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">BEN ABBOU Rachid</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">GHENNIOUI Hicham</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ECHATOUI Nor-Said</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">LAMCHARFI Taj-dine</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ZARED Kamal</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
         <hr>
 
         <div class="col-12">
-          <strong class="ha-click-event" v-on:click="fadeList('.ha-doctoral-list')">Comité doctoral</strong>
+          <strong class="h3 ha-click-event" v-on:click="fadeList('.ha-doctoral-list')">Comité doctoral</strong>
           <div class="list-type2 ha-doctoral-list">
-            <ol>
-              <li ><a href="#">GOUITAA Najoua<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">EL HAJJI NABIH Meryem<span class="ha-custom-badge text-right"></span> </a></li>
-            </ol>
+            <ul class="list-group list-group-media">
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">GOUITAA Najoua</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">EL HAJJI NABIH Meryem</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
         <hr>
 
         <div class="col-12">
-          <strong class="ha-click-event" v-on:click="fadeList('.ha-technique-list')">Comité technique</strong>
+          <strong class="h3 ha-click-event" v-on:click="fadeList('.ha-technique-list')">Comité technique</strong>
           <div class="list-type2 ha-technique-list">
-            <ol>
-              <li ><a href="#">MRABTI FATIHA<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">ALAMI HASSANI Aicha<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">ABARKAN Mouna<span class="ha-custom-badge text-right"></span> </a></li>
-              <li ><a href="#">ERAOUI Hamza<span class="ha-custom-badge text-right"></span> </a></li>
-            </ol>
+
+            <ul class="list-group list-group-media">
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">MRABTI FATIHA</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Enseignant Chercheur chez Faculté des Sciences et Techniques de Fés</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ALAMI HASSANI Aicha</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ABARKAN Mouna</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ERAOUI Hamza</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
         <hr>
 
         <div class="col-12">
-          <strong class="ha-click-event" v-on:click="fadeList('.ha-science-list')">Comité scientifique </strong>
+          <strong class="h3 ha-click-event" v-on:click="fadeList('.ha-science-list')">Comité scientifique </strong>
           <div class="list-type2 ha-science-list">
-            <ol>
-              <li ><a href="#">ABBASSI Latifa<span class="ha-custom-badge text-right">ENS Fès</span> </a></li>
-              <li ><a href="#">ABDI Farid<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">BEN ABBOU Rachid<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">BOUAYADE Mfadal<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">ECHATOUI Nor-Said<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">EL AMRANI EL IDRISSI Najiba<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">EL OUAZZANI Nabih<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">IDRISSI KANDRI Noureddine<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">KABBAJ Hassane<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">LAHBABI Mohemmed<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">LAMCHARFI Taj-dine<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">MRABTI Fatiha<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">TAHRI Driss<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">ZENKOUAR Khalid<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">ZOUAK Mohcine<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">ABARKANE Mouna<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">ABBAD  Khalid<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">AHJYAJE Fatima Zahra<span class="ha-custom-badge text-right">FP Taza</span> </a></li>
-              <li ><a href="#">BOUSHABA Abdelali<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">CHAKER Ilham<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">GHENNIOUI Hicham<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">NAJAH Said<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">ALAMI HASSANI Aicha<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">EL BASSET Abdelhalim<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">ZARED Kamal<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
-              <li ><a href="#">AMARASS Mostapha<span class="ha-custom-badge text-right">FST Fès</span> </a></li>
 
-            </ol>
+            <ul class="list-group list-group-media">
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ABBASSI Latifa</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ABDI Farid</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item" style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">BEN ABBOU Rachid</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Enseignant Chercheur chez Faculté des Sciences et Techniques de Fés</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">BOUAYADE Mfadal</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item" style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ECHATOUI Nor-Said</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">EL AMRANI EL IDRISSI Najiba</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">EL OUAZZANI Nabih</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">IDRISSI KANDRI Noureddine</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">KABBAJ Hassane</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">LAHBABI Mohemmed</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">LAMCHARFI Taj-dine</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F" style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">MRABTI Fatiha</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Enseignant Chercheur chez Faculté des Sciences et Techniques de Fés</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">TAHRI Driss</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ZENKOUAR Khalid</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Enseignant Chercheur chez Faculté des Sciences et Techniques de Fés</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ZOUAK Mohcin</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F" style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ABARKANE Mouna</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ABBAD  Khalid</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F" style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">AHJYAJE Fatima Zahra</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">BOUSHABA Abdelali</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Enseignant Chercheur chez Faculté des Sciences et Techniques de Fés</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F" style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">CHAKER Ilham</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Enseignant Chercheur chez Faculté des Sciences et Techniques de Fés</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">GHENNIOUI Hicham</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">NAJAH Said</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;">Enseignant Chercheur chez Faculté des Sciences et Techniques de Fés</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item F" style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/no-photo-woman.png" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ALAMI HASSANI Aicha</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">EL BASSET Abdelhalim</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">ZARED Kamal</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item " style="height: 69px;">
+                <div class="media" >
+                  <div class="me-3">
+                    <img alt="avatar" src="../assets/images/personne-image.jpg" class="circular-image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="tx-inverse">AMARASS Mostapha</h6>
+                    <p class="mg-b-0" style="margin-top:-18px;"></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
           </div>
         </div>
         <hr>
@@ -131,6 +641,7 @@
 export default {
   name: "EquipeDuColloque",
   methods:{
+
     fadeList: function (className){
       let selector = document.querySelector(className);
       let  disp = selector.style.display;
@@ -143,19 +654,45 @@ export default {
     }
   },
   created() {
-
     setTimeout(function () {
       let selector = document.querySelectorAll('.list-type2');
       console.log(selector);
       for (let i=0;i<selector.length;i++){
         selector[i].style.display = "none";
       }
-    },2000);
-  }
+    },100);
+
+
+  },
+
 }
 </script>
 
 <style scoped>
+.media{
+  display: flex;
+}
+
+.circular-image {
+  width: 40px; /* Ajustez la taille en fonction de vos besoins */
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px; /* Ajustez la marge en fonction de vos besoins */
+}
+
+.list-group-item:hover{
+  background-color: cornflowerblue;
+}
+.F:hover{
+  background-color: mediumpurple;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
   .ha-equipe{
     padding: 20px 30px;

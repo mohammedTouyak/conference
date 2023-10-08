@@ -1,7 +1,3 @@
-//module.exports = {
-//    publicPath: ''
-//}
-
 module.exports = {
     // options...
     publicPath: process.env.NODE_ENV === 'production'
@@ -14,5 +10,14 @@ module.exports = {
     runtimeCompiler: undefined,
     productionSourceMap: undefined,
     parallel: undefined,
-    css: undefined
+    css: {
+        loaderOptions: {
+            css: {},
+            postcss: {
+                plugins: [
+                    require('autoprefixer') // Ajoute automatiquement les préfixes vendeurs aux propriétés CSS
+                ]
+            }
+        }
+    }
 }
